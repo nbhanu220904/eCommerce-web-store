@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactTostify.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
@@ -15,6 +18,7 @@ import SearchBar from "./components/SearchBar";
 const App = () => {
   return (
     <div className="px-4 sm:px-[5pw] md:px-[7vw] lg:px-[9vw]">
+      <ToastContainer />
       <BrowserRouter>
         <Navbar />
         <SearchBar />
